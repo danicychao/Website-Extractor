@@ -1,6 +1,9 @@
 # Website-Extractor
 A python script, [extract.py](https://github.com/danicychao/Website-Extractor/blob/main/extract.py), to extract logo and phone numbers given a website url.
 
+## How to use
+python extract.py `<url>`
+
 ## Required libraries
 [requests](https://requests.readthedocs.io/en/latest/), [bs4 (beautifulsoup4)](https://www.crummy.com/software/BeautifulSoup/bs4/doc/), and [phonenumbers](https://github.com/daviddrysdale/python-phonenumbers).
 
