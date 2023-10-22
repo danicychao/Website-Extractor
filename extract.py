@@ -57,6 +57,9 @@ def extract_ImageUrl(data):
             elif 'Logo' in (img_tag['src']):
                 logo_url = urljoin(url, img_tag['src'])
                 break
+    else:
+        #print('test RBI')
+        return None
                 
     return logo_url
 
@@ -93,8 +96,8 @@ def extract_PhoneNumber(data, pattern, country=True):
 
 
 url=sys.argv[1]
-#data = crawl_headerway(url)
-data = crawl_sessionway(url)
+data = crawl_headerway(url)
+#data = crawl_sessionway(url)
 
 
 if data != 0:
