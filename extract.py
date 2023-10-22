@@ -46,6 +46,8 @@ def extract_ImageUrl(data):
     root=bs4.BeautifulSoup(data, "html.parser")
     potential_img_tags = root.find_all('img')
     
+    logo_url = 'None'
+    
     if len(potential_img_tags) == 0:
         return None
 
@@ -57,9 +59,6 @@ def extract_ImageUrl(data):
             elif 'Logo' in (img_tag['src']):
                 logo_url = urljoin(url, img_tag['src'])
                 break
-    else:
-        #print('test RBI')
-        return None
                 
     return logo_url
 
