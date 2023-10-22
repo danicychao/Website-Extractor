@@ -95,8 +95,8 @@ def extract_PhoneNumber(data, pattern, country=True):
 
 
 url=sys.argv[1]
-data = crawl_headerway(url)
-#data = crawl_sessionway(url)
+#data = crawl_headerway(url)
+data = crawl_sessionway(url)
 
 
 if data != 0:
